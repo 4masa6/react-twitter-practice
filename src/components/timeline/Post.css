@@ -9,12 +9,17 @@
   padding: 10px;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .post__body > img {
   border-radius: 20px;
   width: 100%;
 }
 
-.post__fotter {
+.post__footer {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
@@ -42,5 +47,5 @@
 }
 
 .post__avatar {
-  padding: 20px;
+  padding: 15px;
 }
