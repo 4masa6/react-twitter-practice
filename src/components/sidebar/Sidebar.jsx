@@ -13,6 +13,8 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Button } from "@mui/material";
 
+import './Sidebar.css';
+
 function Sidebar() {
   return (
     <div className="sidebar">
