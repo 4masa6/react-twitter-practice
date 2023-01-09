@@ -1,4 +1,5 @@
 import React from 'react'
+import Post from './Post'
 import "./Timeline.css"
 import TweetBox from './TweetBox'
 
@@ -14,6 +15,13 @@ function Timeline() {
       <TweetBox />
 
       {/* Post */}
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </div>
   )
 }
