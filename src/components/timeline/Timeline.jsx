@@ -15,13 +15,13 @@ function Timeline() {
       <TweetBox />
 
       {/* Post */}
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Post
+        displayName="Reactプログラミング"
+        username="react_practice"
+        verified
+        text="初めてのツイート"
+        image="https://source.unsplash.com/random"
+      />
     </div>
   )
 }
