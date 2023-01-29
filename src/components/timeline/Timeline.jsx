@@ -6,7 +6,7 @@ import TweetBox from './TweetBox'
 import "./Timeline.css"
 
 import db from '../../firebase'
-import { collection, getDocs } from "firebase/firestore"; 
+import { collection, getDocs, query, orderBy } from "firebase/firestore"; 
 
 function Timeline() {
 
@@ -15,7 +15,8 @@ function Timeline() {
   
   useEffect(() => {
     const postData = collection(db, 'posts');
-    getDocs(postData).then((querySnapshot) => {
+    const q = query(postData, orderBy('timestamp', 'desc')); // 時間を降順に取得
+    getDocs(q).then((querySnapshot) => {
       setPosts(querySnapshot.docs.map((doc) => doc.data()));
     })
   }, [])

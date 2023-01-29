@@ -1,7 +1,7 @@
 import { Avatar, Button } from '@mui/material'
 import React, { useState } from 'react'
 
-import { collection, addDoc} from 'firebase/firestore'
+import { collection, addDoc, serverTimestamp} from 'firebase/firestore'
 
 import './TweetBox.css'
 import db from '../../firebase';
@@ -20,6 +20,7 @@ function TweetBox() {
           verified: true,
           text: tweetMessage,
           image: tweetImage,
+          timestamp: serverTimestamp(), // 現在の時間を保存する
     })
 
     setTweetMessage('');
