@@ -27,12 +27,12 @@
 }
 
 .tweetBox__tweetButton {
-  background-color: var(--twitter-color);
-  color: white;
-  font-weight: 900;
-  width: 130px;
-  height: 40px;
-  border-radius: 30px;
-  margin-top: 20px;
-  margin-left: auto;
+  background-color: var(--twitter-color) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  width: 130px !important;
+  height: 40px !important;
+  border-radius: 30px !important;
+  margin-top: 20px !important;
+  margin-left: auto !important;
 }
